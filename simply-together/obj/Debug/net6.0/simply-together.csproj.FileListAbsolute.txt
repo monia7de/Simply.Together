@@ -1,0 +1,15 @@
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\simply-together.exe
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\simply-together.deps.json
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\simply-together.runtimeconfig.json
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\simply-together.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\simply-together.pdb
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.csproj.AssemblyReference.cache
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.AssemblyInfoInputs.cache
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.AssemblyInfo.cs
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.csproj.CoreCompileInputs.cache
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.dll
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\refint\simply-together.dll
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.pdb
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.genruntimeconfig.cache
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\ref\simply-together.dll
