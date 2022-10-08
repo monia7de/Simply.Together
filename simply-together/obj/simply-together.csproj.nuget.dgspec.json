@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj": {}
+    "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj": {}
   },
   "projects": {
-    "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj": {
+    "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
+        "projectUniqueName": "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
         "projectName": "simply-together",
-        "projectPath": "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
+        "projectPath": "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
         "packagesPath": "C:\\Users\\monik\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProjects\\Simply.Together\\simply-together\\obj\\",
+        "outputPath": "c:\\MyProjects\\Simply.Together\\simply-together\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ConsoleTableExt": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
