@@ -1,3 +1,9 @@
-public class Validator
+using System;
+
+namespace simply_together
 {
+    public class Validator
+    {
+        
+    }
 }
