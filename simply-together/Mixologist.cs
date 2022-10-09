@@ -79,7 +79,11 @@ namespace simply_together
                 }
 
                 TableVisualisation.DisplayTable(prepList, drinkRecipe.strDrink);
-                Console.Read();
+            
+
+                UserInput.GetActivityInput();
+
+
             }
         }
     }

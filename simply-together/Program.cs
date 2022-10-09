@@ -10,4 +10,6 @@ class Program
         UserInput userInput = new();
         userInput.GetDrinkTypesInput(); 
     }
+
+   
 }

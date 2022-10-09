@@ -35,5 +35,16 @@ namespace simply_together
 
             return true;
         }
+
+        internal string IsNoOfParticipantsValid(string? numberOfParticipants)
+        {
+            while (string.IsNullOrEmpty(numberOfParticipants))
+            {
+                Console.WriteLine("Invalid Command. Please type a number between 1-3 \n");
+                numberOfParticipants = Console.ReadLine();
+
+            }
+            return numberOfParticipants;
+        }
     }
 }

@@ -7,10 +7,11 @@ namespace simply_together
         UIManager uiManager = new();
         Mixologist mixologist = new();
 
+        ActivityService activityService = new();
+
          internal void GetDrinkTypesInput()
         {
-           // mixologist.GetDrinkTypes();
-
+           
             uiManager.ChooseDrinkType();
             string drinkType = Console.ReadLine();
 
@@ -47,6 +48,44 @@ namespace simply_together
 
         }
 
-        
+        internal static void GetActivityInput()
+        {
+            Validation validation = new();
+
+            bool closeApp = false;
+            while (closeApp == false)
+            {
+                UIManager.ChooseNumberOfParticipants();
+            string numberOfParticipants = Console.ReadLine();
+
+           var numberOfParticipantsValidated = validation.IsNoOfParticipantsValid(numberOfParticipants);
+
+
+            switch (numberOfParticipantsValidated)
+                {
+                    case "0":
+                        Console.WriteLine("\nGoodbye!\n");
+                        closeApp = true;
+                        Environment.Exit(0);
+                        break;
+
+                    case "1":
+                        ActivityService.GetActivitiesForOne();
+                        break;
+
+                    case "2":
+                       // ActivityService.GetActivitiesForTwo();
+                        break;
+
+                    case "3":
+                      //  ActivityService.GetActivitiesForGroup();
+                        break;
+
+
+            }
+
+            
+
+        }
     }
 }
