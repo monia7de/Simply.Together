@@ -8,10 +8,13 @@ namespace simply_together
         Mixologist mixologist = new();
 
         
-
+        /// <summary>
+        /// Method <c>GetDrinkTypesInput</c> calls the uiManager method ChooseDrinkType and takes user input 
+        /// for their preferred drink category. It calls the Validation class method to check if the string is not null or empty.
+        /// Calls the GetDrinksInput method to which it passes on the user's chosen drink category
+        /// </summary>
          internal void GetDrinkTypesInput()
         {
-           
             uiManager.ChooseDrinkType();
             string drinkType = Console.ReadLine();
 
@@ -27,6 +30,11 @@ namespace simply_together
         }
 
 
+        /// <summary>
+        /// Method <c>GetDrinksInput</c> calls the uiManager method ChooseDrink and takes user input 
+        /// for their preferred drink from the chosen previously category. It calls the Validation class method to check if the input is valid.
+        /// Calls the GetDrinksInput method to which it passes on the user's chosen drink category
+        /// </summary>
         public void GetDrinksInput(string? drinkType)
         {
            
@@ -48,7 +56,11 @@ namespace simply_together
             
         }
 
-        public void GetActivityInput()
+        /// <summary>
+        /// Method <c>GetActivityInput</c> calls the uiManager method ChooseNumberOfParticipants to offer the user a choice 
+        /// of three types of dates and calls different methods for this purpose. The user can only choose to close the app.
+        /// </summary>
+        public void GetActivityInput()         // only case 1 works at the moment
         {
             ActivityService activityService = new();
             Validation validation = new();           

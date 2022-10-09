@@ -13,6 +13,8 @@ class Program
         DatabaseManager databaseManager = new();
         databaseManager.CreateTable(connectionString);
 
+        UIManager.WelcomeMessage();
+
         UserInput userInput = new();
         userInput.GetDrinkTypesInput(); 
     }

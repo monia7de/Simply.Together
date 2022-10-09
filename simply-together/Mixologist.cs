@@ -10,8 +10,11 @@ namespace simply_together
 {
     public class Mixologist
     {
-        
-        
+     
+        /// <summary>
+        /// Method <c>GetDrinkTypes</c> calls the external drinks API and makes a list of drink categories.
+        /// It then passes the list to TableVisualisation class to be displayed in the console.
+        /// </summary>
         internal void GetDrinkTypes()
         {
             var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1");
@@ -31,6 +34,10 @@ namespace simply_together
             }
         }
 
+        /// <summary>
+        /// Method <c>GetDrinksByType</c> calls the external drinks API and makes a list of drinks in the chosen category.
+        /// It then passes the list to TableVisualisation class to be displayed in the console.
+        /// </summary>
         internal void GetDrinksByType(string? drinkType)
         {
             var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
@@ -48,6 +55,11 @@ namespace simply_together
             }
         }
 
+        /// <summary>
+        /// Method <c>GetDrinke</c> calls the external drinks API and gets the recipe for the selected drink. 
+        /// It formats the data into a more user friendly style.
+        /// It calls the UserInput method for the user to choose the date idea.
+        /// </summary>
         public void GetDrink(string? drink)
         {
            UserInput userInput = new();

@@ -6,6 +6,11 @@ namespace simply_together
 {
     public class TableVisualisation
     {
+        /// <summary>
+        /// Method <c>DisplayTable</c> uses ConsoleTableBuilder to draw a table in the console.
+        /// It receives a list of generic type <paramref name="tableData"/> and conducts a null check on 
+        /// <paramref name="tableName"/>
+        /// </summary>
         public static void DisplayTable<T>(List<T> tableData, [AllowNull] string tableName) where T : class
         {
             if (tableName == null)

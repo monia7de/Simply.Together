@@ -11,6 +11,10 @@ namespace simply_together
     public class ActivityService
     {
     
+        /// <summary>
+        /// Method <c>GetActivityForOneAsync</c> calls the external API and gets one randomly selected date activity 
+        /// suitable for a date with themselves
+        /// </summary>
         public async Task GetActivityForOneAsync()
         {
 
@@ -25,7 +29,12 @@ namespace simply_together
              
         }
 
-        public async Task GetActivityForTwoAsync()
+
+        /// <summary>
+        /// Method <c>GetActivityForTwoAsync</c> calls the external API and gets one randomly selected date activity 
+        /// suitable for a date for two people
+        /// </summary>
+        public async Task GetActivityForTwoAsync()   // not working at the moment
         {
 
                 string url = "https://www.boredapi.com/api/activity?participants=2";
@@ -39,7 +48,10 @@ namespace simply_together
              
         }
 
-
+        /// <summary>
+        /// Method <c>GetActivityForGroupAsync</c> calls the external API and gets one randomly selected date activity 
+        /// suitable for a group of people
+        /// </summary>
         public async Task GetActivityForGroupAsync()
         {
 
