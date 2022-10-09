@@ -7,7 +7,7 @@ namespace simply_together
         UIManager uiManager = new();
         Mixologist mixologist = new();
 
-        ActivityService activityService = new();
+        
 
          internal void GetDrinkTypesInput()
         {
@@ -27,7 +27,7 @@ namespace simply_together
         }
 
 
-        private void GetDrinksInput(string? drinkType)
+        public void GetDrinksInput(string? drinkType)
         {
            
             uiManager.ChooseDrink(drinkType);
@@ -45,23 +45,24 @@ namespace simply_together
             }
 
             mixologist.GetDrink(drink);
-
+            
         }
 
-        internal static void GetActivityInput()
+        public void GetActivityInput()
         {
-            Validation validation = new();
-
+            ActivityService activityService = new();
+            Validation validation = new();           
+            UIManager uiManager = new();
+           
             bool closeApp = false;
             while (closeApp == false)
-            {
-                UIManager.ChooseNumberOfParticipants();
-            string numberOfParticipants = Console.ReadLine();
+            { 
+                uiManager.ChooseNumberOfParticipants();
+                string numberOfParticipants = Console.ReadLine();
 
-           var numberOfParticipantsValidated = validation.IsNoOfParticipantsValid(numberOfParticipants);
+                var numberOfParticipantsValidated = validation.IsNoOfParticipantsValid(numberOfParticipants);
 
-
-            switch (numberOfParticipantsValidated)
+                switch (numberOfParticipantsValidated)
                 {
                     case "0":
                         Console.WriteLine("\nGoodbye!\n");
@@ -70,7 +71,7 @@ namespace simply_together
                         break;
 
                     case "1":
-                        ActivityService.GetActivitiesForOne();
+                        activityService.GetActivityForOneAsync();
                         break;
 
                     case "2":
@@ -82,10 +83,10 @@ namespace simply_together
                         break;
 
 
-            }
+                }
 
             
-
+            }
         }
     }
 }

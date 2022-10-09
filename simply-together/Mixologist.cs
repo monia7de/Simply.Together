@@ -3,11 +3,15 @@ using System.Reflection;
 using Newtonsoft.Json;
 using RestSharp;
 using simply_together.Models;
+using simply_together;
+
 
 namespace simply_together
 {
     public class Mixologist
     {
+        
+        
         internal void GetDrinkTypes()
         {
             var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1");
@@ -44,9 +48,10 @@ namespace simply_together
             }
         }
 
-        internal void GetDrink(string? drink)
+        public void GetDrink(string? drink)
         {
-           // DrinkRecipe drinkRecipe = new();
+           UserInput userInput = new();
+          
 
             var client = new RestClient("http://www.thecocktaildb.com/api/json/v1/1/");
             var request = new RestRequest($"lookup.php?i={drink}");
@@ -54,6 +59,7 @@ namespace simply_together
 
             if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
             {
+                
                 string rawResponse = response.Result.Content;
                 
                 var serialize = JsonConvert.DeserializeObject<DrinkRecipeObject>(rawResponse);
@@ -79,12 +85,14 @@ namespace simply_together
                 }
 
                 TableVisualisation.DisplayTable(prepList, drinkRecipe.strDrink);
-            
-
-                UserInput.GetActivityInput();
-
-
+                
+                
             }
+            
+        
+            userInput.GetActivityInput();
         }
+
+
     }
 }
