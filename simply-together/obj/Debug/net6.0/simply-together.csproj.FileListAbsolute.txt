@@ -37,3 +37,14 @@ C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win-arm\
 C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
