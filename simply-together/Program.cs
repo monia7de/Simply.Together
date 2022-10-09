@@ -1,10 +1,13 @@
 ﻿
 
 
-internal class Program
+using simply_together;
+
+class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
         UserInput userInput = new();
+        userInput.GetDrinkTypesInput(); 
     }
 }
