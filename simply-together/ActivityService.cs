@@ -35,38 +35,56 @@ namespace simply_together
     
         public async Task GetActivityForOneAsync()
         {
-            
-            //static async Task GetRandomActivityForOne()
-            //{
 
-                string url = "https://www.boredapi.com/api/activity";
-                HttpClient client = new HttpClient();
-
-                //Program program = new Program();
-                //await program.GetTodoItems();
-                //}
-
-                //private async Task GetTodoItems()
+                string url = "https://www.boredapi.com/api/activity?participants=1";
+                // "https://www.boredapi.com/api/activity/";
                 
+                HttpClient client = new HttpClient();
                 var response = await client.GetAsync(url);
                 string jsonResponse = await response.Content.ReadAsStringAsync();
-                    
-                    //Console.WriteLine(jsonResponse);
-
-
+                
                 var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse);   
-                    //Todo todo = JsonConvert.DeserializeObject<Todo>(response);
-
+                Console.WriteLine("\n\n");
                 Console.WriteLine(dateIdea.Activity);
-
-                    //Console.WriteLine(todo);
-           // }
-
-
+             
         }
 
+        public async Task GetActivityForTwoAsync()
+        {
+
+                string url = "https://www.boredapi.com/api/activity?participants=2";
+                HttpClient client = new HttpClient();
+
+                var response = await client.GetAsync(url);
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+                
+                var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse);
+                Console.WriteLine("\n\n");   
+                Console.WriteLine(dateIdea.Activity);
+             
+        }
+
+
+        public async Task GetActivityForGroupAsync()
+        {
+
+                string url = "https://www.boredapi.com/api/activity?participants=4";
+                HttpClient client = new HttpClient();
+
+                var response = await client.GetAsync(url);
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+                
+                var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse); 
+                Console.WriteLine("\n\n");  
+                Console.WriteLine(dateIdea.Activity);
+             
+        }
+
+        
     }
-    public class DateIdea
+
+
+public class DateIdea
     {
         [JsonProperty("activity")]
         public string Activity { get; set; }
@@ -78,7 +96,7 @@ namespace simply_together
         public int Participants { get; set; }
 
         [JsonProperty("price")]
-        public double Price { get; set; }
+        public int Price { get; set; }
 
         [JsonProperty("link")]
         public string Link { get; set; }
@@ -89,30 +107,7 @@ namespace simply_together
         [JsonProperty("accessibility")]
         public double Accessibility { get; set; }
     }
-    /*
-    public class Todo
-    {
-        public string activity { get; set; } = string.Empty;
-        public string type { get; set; } = string.Empty;
-        public int participants { get; set; }
-        public double price { get; set; }
-        public string link { get; set; } = string.Empty;
-        public string key { get; set; } = string.Empty;
-        public double accessibility { get; set; }
-
-        public override string ToString()
-        {
-            return $"The activity that you should consider doing: {activity}.\nIt requires {participants} person(s)." +
-                $"\nThe type of activity: {type}.";
-        }
-    }
-
-    */
-
-
-
-
-
-
 }
-        
+
+
+

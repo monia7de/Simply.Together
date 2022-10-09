@@ -71,15 +71,18 @@ namespace simply_together
                         break;
 
                     case "1":
+                        closeApp = true;
                         activityService.GetActivityForOneAsync();
                         break;
 
                     case "2":
-                       // ActivityService.GetActivitiesForTwo();
+                        closeApp = true;
+                        activityService.GetActivityForTwoAsync();
                         break;
 
                     case "3":
-                      //  ActivityService.GetActivitiesForGroup();
+                        closeApp = true;
+                        activityService.GetActivityForGroupAsync();
                         break;
 
 
