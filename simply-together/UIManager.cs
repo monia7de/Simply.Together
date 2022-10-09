@@ -30,6 +30,7 @@ namespace simply_together
         {
             mixologist.GetDrinkTypes();
             Console.WriteLine("What type of drink would you like?");
+            Console.WriteLine("We are sorry but 'Coffee/Tea','Punch/Party Drink and Other/Unknown are unavailable today");
         }
 
 
