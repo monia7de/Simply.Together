@@ -13,3 +13,7 @@ C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\refint\simply-tog
 C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.pdb
 C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.genruntimeconfig.cache
 C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\ref\simply-together.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\ConsoleTableExt.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\MyProjects\Simply.Together\simply-together\bin\Debug\net6.0\RestSharp.dll
+C:\MyProjects\Simply.Together\simply-together\obj\Debug\net6.0\simply-together.csproj.CopyComplete
