@@ -4,28 +4,6 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using simply_together.Models;
 
-/*
-namespace simply_together
-{
-    public class ActivityService
-    {
-        public async Task GetActivitiesForOne()
-        {
-            string url = "https://www.boredapi.com/api/activity?participants=1";
-            HttpClient client = new HttpClient();
-
-            var response = await client.GetStringAsync(url);
-            string jsonResponse = await response.Content.ReadAsStringAsync(); 
-
-            var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse);
-
-            Console.WriteLine(dateIdea.Activity);        
-            
-
-        }
-    }
-}
-*/
 
 namespace simply_together
 {
@@ -37,8 +15,6 @@ namespace simply_together
         {
 
                 string url = "https://www.boredapi.com/api/activity?participants=1";
-                // "https://www.boredapi.com/api/activity/";
-                
                 HttpClient client = new HttpClient();
                 var response = await client.GetAsync(url);
                 string jsonResponse = await response.Content.ReadAsStringAsync();
@@ -54,12 +30,11 @@ namespace simply_together
 
                 string url = "https://www.boredapi.com/api/activity?participants=2";
                 HttpClient client = new HttpClient();
-
                 var response = await client.GetAsync(url);
                 string jsonResponse = await response.Content.ReadAsStringAsync();
                 
-                var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse);
-                Console.WriteLine("\n\n");   
+                var dateIdea = JsonConvert.DeserializeObject<DateIdea>(jsonResponse);   
+                Console.WriteLine("\n\n");
                 Console.WriteLine(dateIdea.Activity);
              
         }

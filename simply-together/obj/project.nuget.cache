@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3V9j6cFtM7e8FSUVCsMIHp+TMeFY/SQFPHj61uEfvId9bcT6FIWlUbqgR6v2YimhEchS+hc6mJ+7Bc5sanRS8A==",
+  "dgSpecHash": "BbpzJE3Z3CIwbNgtbu6fhMT0SM8i4G5S2py3Im5GYLqnRw9KICDXOwfc7axtVBa001uChPO3K9BgY0GUNOzP9A==",
   "success": true,
-  "projectFilePath": "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
+  "projectFilePath": "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monik\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
     "C:\\Users\\monik\\.nuget\\packages\\microsoft.data.sqlite\\6.0.9\\microsoft.data.sqlite.6.0.9.nupkg.sha512",
