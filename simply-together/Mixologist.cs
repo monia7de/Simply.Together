@@ -2,7 +2,7 @@ using System;
 
 namespace simply_together
 {
-    public class UserInput
+    public class Mixologist
     {
         
     }
