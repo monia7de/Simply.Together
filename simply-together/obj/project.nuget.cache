@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "w0fRlnOQhZ9YBPxCcCLyiR5aS9i/P20mVrZujT4ZzBi8LWeY04F6IH+KULeDLlp8LxKYlKyEMp4kunVrZZtbGA==",
+  "dgSpecHash": "3V9j6cFtM7e8FSUVCsMIHp+TMeFY/SQFPHj61uEfvId9bcT6FIWlUbqgR6v2YimhEchS+hc6mJ+7Bc5sanRS8A==",
   "success": true,
-  "projectFilePath": "C:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
+  "projectFilePath": "c:\\MyProjects\\Simply.Together\\simply-together\\simply-together.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monik\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\microsoft.data.sqlite\\6.0.9\\microsoft.data.sqlite.6.0.9.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.9\\microsoft.data.sqlite.core.6.0.9.nupkg.sha512",
     "C:\\Users\\monik\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\monik\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512"
+    "C:\\Users\\monik\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.6\\sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\sqlitepclraw.core\\2.0.6\\sqlitepclraw.core.2.0.6.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.6\\sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.6\\sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
+    "C:\\Users\\monik\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }
