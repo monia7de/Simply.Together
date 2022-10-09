@@ -28,7 +28,23 @@ namespace simply_together
 
         private void GetDrinksInput(string? drinkType)
         {
-            mixologist.GetDrinksByType(drinkType);
+           
+            uiManager.ChooseDrink(drinkType);
+            string drink = Console.ReadLine();
+
+            if (drink == "0")
+            {
+               GetDrinkTypesInput(); 
+            } 
+
+            while (!Validation.IsIdValid(drink))
+            {
+                UIManager.InvalidDrink();
+                drink = Console.ReadLine();
+            }
+
+            mixologist.GetDrink(drink);
+
         }
 
         

@@ -13,9 +13,20 @@ namespace simply_together
 
         internal static void InvalidDrinkType()
         {
-            Console.WriteLine("\nInvalid drink type. Please look at the menu and choose again");
+            Console.WriteLine("\nInvalid drink type. Please look at the menu and choose again.");
         }
 
-        
+        internal void ChooseDrink(string? drinkType)
+        {
+            mixologist.GetDrinksByType(drinkType);
+            Console.WriteLine("Choose a drink id number or type 0 to go back to the drink type menu:");
+
+        }
+
+        internal static void InvalidDrink()
+        {
+            Console.WriteLine("\nInvalid drink. Please look at the drink selection and choose the id number again.");
+        }
     }
 }
+

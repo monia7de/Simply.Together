@@ -19,5 +19,21 @@ namespace simply_together
 
             return true;
         }
+
+        public static bool IsIdValid(string? drink)
+        {
+            if (String.IsNullOrEmpty(drink))
+            {
+                return false;
+            }
+
+            foreach (char c in drink)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+
+            return true;
+        }
     }
 }
